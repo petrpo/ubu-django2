@@ -2,7 +2,8 @@
 # basic django bootstrap (ver.2) under ubuntu linux
 #
 
-echo "Should the system be updated? YES !!"
+echo
+echo "System will be updated !!"
 sleep 3
 
 sudo aptitude update
@@ -54,7 +55,7 @@ if [ $YES_or_NO == "y" ] || [ $YES_or_NO == "Y" ] || [ $YES_or_NO == "yes" ] || 
   cd ~/$MY_DEV_DIR
   # create your project in virtual environment in devel directory
   echo "What is your python project name ??"
-  read $PY_PROJECT
+  read PY_PROJECT
   virtualenv $PY_PROJECT
   echo
   echo "Your project $PY_PROJECT is created"
