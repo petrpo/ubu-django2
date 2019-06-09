@@ -8,7 +8,7 @@ echo
 
 sudo aptitude -q update -q
 echo "System will be updated and upgraded !!"
-sudo aptitude -qq -y upgrade
+sudo apt-get -y upgrade -qq
 #
 # #<python-pip> loads django1 but we need django (ver.2)
 #sudo aptitude install python-pip
