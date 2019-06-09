@@ -13,7 +13,7 @@ sudo aptitude -y upgrade
 #
 echo
 echo "System will bootstrap files for django2 under python3"
-sleep 3
+echo
 
 #
 # install python3-pip
@@ -25,7 +25,7 @@ sudo aptitude -y install python3-pip
 #
 echo
 echo "pip3 upgrade, download virtualenv, django"
-sleep 3
+echo
 sudo -H pip3 install --upgrade pip
 sudo -H pip3 install virtualenv
 sudo -H pip3 install django
@@ -33,6 +33,7 @@ sudo -H pip3 install django
 #
 # create devel directory? 
 #
+echo
 echo "Should I create your dev directory? (y,yes,Y,Yes,YES|No or hit enter)"
 read YES_or_NO
 if [ $YES_or_NO == "y" ] || [ $YES_or_NO == "Y" ] || [ $YES_or_NO == "yes" ] || [ $YES_or_NO == "Yes" ] || [ $YES_or_NO == "YES" ] ; then
