@@ -23,6 +23,9 @@ sudo aptitude -y install python3-pip
 #
 # pip3 installation
 #
+echo
+echo "pip3 upgrade, download virtualenv, django" 
+sleep 3
 sudo -H pip3 install --upgrade pip
 sudo -H pip3 install virtualenv
 sudo -H pip3 install django
@@ -43,4 +46,5 @@ virtualenv my-py-project01
 # import django module and check django's version
 #
 python3 -c "import django"
+echo "django version:"
 python3 -m django --version
