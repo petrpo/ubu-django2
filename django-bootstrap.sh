@@ -15,10 +15,14 @@ echo
 echo "System will bootstrap files for django2 under python3" 
 sleep 3
 
-# download the files without asking
+#
+# install python3-pip
+#
 sudo aptitude - y install python3-pip
 
-# time for pip3
+#
+# pip3 installation
+#
 sudo -H pip3 install --upgrade pip
 sudo -H pip3 install virtualenv
 sudo -H pip3 install django
