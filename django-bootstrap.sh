@@ -4,10 +4,10 @@
 
 echo
 echo "System will be updated !!"
-sleep 3
+echo
 
-sudo aptitude update
-sudo aptitude -y upgrade
+sudo aptitude -q update -q
+sudo aptitude -q -y upgrade
 #
 # #<python-pip> loads django1 but we need django (ver.2)
 #sudo aptitude install python-pip
