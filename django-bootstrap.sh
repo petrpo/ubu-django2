@@ -1,5 +1,5 @@
 #
-# basic django bootstrap (ver.2)
+# basic django bootstrap (ver.2) under ubuntu linux
 #
 
 echo "Should the system be updated? YES !!" 
@@ -33,18 +33,32 @@ sudo -H pip3 install django
 #
 # create devel directory? 
 #
-# your dev directory is ....
-#echo "How should I name your devel directory?"
-#read MY_DEV_DIR
-#mkdir $MY_DEV_DIR
-#cd dev
-#
-# create your project in virtual environment
-virtualenv my-py-project01
-
-#
-# import django module and check django's version
-#
-python3 -c "import django"
-echo "django version:"
-python3 -m django --version
+echo "Should I create your dev directory? (y,yes,Y,Yes,YES|No or hit enter)"
+read YES_or_NO
+if [ $YES_or_NO == "y" ] || [ $YES_or_NO == "Y"] || [ $YES_or_NO == "yes"] ||  [ $YES_or_NO == "Yes"] ||  [ $YES_or_NO == "YES"] ; then
+  echo "y,Y,yes,Yes,YES"
+  echo
+  echo "How Should I name devel directory"
+  read MY_DEV_DIR
+  if [ -e ~/$MY_DEV_DIR ] ; then
+    echo
+    echo "Ups. Directory $MY_DEV_DIR already exists. It cannot be created."
+    echo
+  else
+    echo
+    echo Directory $MY_DEV_DIR was created.
+    echo
+    mkdir ~/$MY_DEV_DIR
+  fi
+  cd ~/$MY_DEV_DIR
+  # create your project in virtual environment
+  virtualenv my-py-project01
+  #
+  # import django module and check django's version
+  #
+  python3 -c "import django"
+  echo
+  echo "django version:"
+  python3 -m django --version
+  echo
+fi
