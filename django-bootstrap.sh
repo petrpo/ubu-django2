@@ -40,15 +40,6 @@ sudo -H pip3 install django
 virtualenv my-py-project01
 
 #
-# check the django version
-#
-# open python3
-python3
-#>>>import django
-#>>>django.get_version()
-#'2.x.y'
-#CRTL+D
-#
 # import django module and check django's version
 #
 python3 -c "import django"
