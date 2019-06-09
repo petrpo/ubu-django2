@@ -52,8 +52,8 @@ if [ $YES_or_NO == "y" ] || [ $YES_or_NO == "Y" ] || [ $YES_or_NO == "yes" ] || 
     echo
     mkdir ~/$MY_DEV_DIR
   fi
-  cd ~/$MY_DEV_DIR
   # create your project in virtual environment in devel directory
+  cd ~/$MY_DEV_DIR
   echo "What is your python project name ??"
   read PY_PROJECT
   virtualenv $PY_PROJECT
