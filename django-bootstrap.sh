@@ -15,7 +15,8 @@ echo
 echo "System will bootstrap files for django2 under python3" 
 sleep 3
 
-sudo aptitude install python3-pip
+# download the files without asking
+sudo aptitude - y install python3-pip
 
 # time for pip3
 sudo -H pip3 install --upgrade pip
