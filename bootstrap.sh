@@ -37,9 +37,8 @@ sudo -H pip3 install django-admin
 #
 echo
 echo "Should I create your dev directory? (y,yes,Y,Yes,YES|No or hit enter)"
-read YES_or_NO
-if [ $YES_or_NO == "y" ] || [ $YES_or_NO == "Y" ] || [ $YES_or_NO == "yes" ] || [ $YES_or_NO == "Yes" ] || [ $YES_or_NO == "YES" ] ; then
-  echo "y,Y,yes,Yes,YES"
+read YESorNO
+if [ $YESorNO == "y" ] || [ $YESorNO == "Y" ] || [ $YESorNO == "yes" ] || [ $YESorNO == "Yes" ] || [ $YESorNO == "YES" ] ; then
   echo
   echo "How Should I name devel directory"
   read MY_DEV_DIR
