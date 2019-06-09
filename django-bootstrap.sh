@@ -25,7 +25,6 @@ sudo aptitude -y install python3-pip
 #
 # pip3 installation
 #
-echo
 echo "pip3 upgrade, download virtualenv, django"
 echo
 sudo -H pip3 install --upgrade pip
