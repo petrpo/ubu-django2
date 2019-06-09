@@ -3,11 +3,12 @@
 #
 
 echo
-echo "System will be updated !!"
+echo "System will maybe need your sudo password !!"
 echo
 
 sudo aptitude -q update -q
-sudo aptitude -q -y upgrade
+echo "System will be updated and upgraded !!"
+sudo aptitude -qq -y upgrade
 #
 # #<python-pip> loads django1 but we need django (ver.2)
 #sudo aptitude install python-pip
