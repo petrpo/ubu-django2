@@ -44,3 +44,8 @@ python3
 #>>>django.get_version()
 #'2.x.y'
 #CRTL+D
+#
+# import django module and check django's version
+#
+python3 -c "import django"
+python3 -m django --version
