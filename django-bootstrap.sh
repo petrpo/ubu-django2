@@ -2,13 +2,13 @@
 # basic django bootstrap (ver.2)
 #
 
-echo "Should be system updated? YES !!" 
+echo "Should the system be updated? YES !!" 
 sleep 3
 
 sudo aptitude update
 sudo aptitude -y upgrade
 #
-# #<python-pip> is not neccesary for django (ver.2)
+# #<python-pip> loads django1 but we need django (ver.2)
 #sudo aptitude install python-pip
 #
 echo
@@ -18,7 +18,7 @@ sleep 3
 #
 # install python3-pip
 #
-sudo aptitude - y install python3-pip
+sudo aptitude -y install python3-pip
 
 #
 # pip3 installation
