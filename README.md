@@ -5,5 +5,4 @@
 
 - Download and execute script from github:
 
-wget -O - https://raw.githubusercontent.com/petrpo/ubu-django2/master/django-bootstrap.sh | bash 
-
+wget -O - https://raw.githubusercontent.com/petrpo/ubu-django2/master/bootstrap.sh | bash 
