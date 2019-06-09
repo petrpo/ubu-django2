@@ -8,13 +8,13 @@ echo
 
 sudo aptitude -q update -q
 echo "System will be updated and upgraded !!"
-sudo apt-get -y upgrade -qq
+sudo aptitude -y -q upgrade -q
 #
 # #<python-pip> loads django1 but we need django (ver.2)
 #sudo aptitude install python-pip
 #
 echo
-echo "System will bootstrap files for django2 under python3"
+echo "System will bootstrap files for django2 under python3 (quitely)"
 echo
 
 #
