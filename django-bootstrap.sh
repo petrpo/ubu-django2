@@ -30,6 +30,7 @@ echo
 sudo -H pip3 install --upgrade pip
 sudo -H pip3 install virtualenv
 sudo -H pip3 install django
+sudo -H pip3 install django-admin
 
 #
 # create devel directory? 
